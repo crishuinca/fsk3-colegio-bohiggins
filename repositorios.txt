@@ -1,0 +1,22 @@
+Repositorio principal:
+- fsk3-colegio-bohiggins
+- URL: https://github.com/crishuinca/fsk3-colegio-bohiggins
+- Descripcion: repositorio documental de la entrega EV2. Contiene README general, links y documentos.
+
+Repositorios de componentes:
+
+1. ms-academico
+- URL: https://github.com/crishuinca/fsk3-ms-academico
+- Descripcion: microservicio Spring Boot encargado de estudiantes, cursos, asignaturas, evaluaciones y notas.
+
+2. ms-asistencia
+- URL: https://github.com/crishuinca/fsk-ms-asistencia
+- Descripcion: microservicio Spring Boot encargado de asistencias y anotaciones.
+
+3. bff-libroclases
+- URL: https://github.com/crishuinca/fsk3-bff
+- Descripcion: Backend For Frontend que consume los microservicios y entrega datos compuestos al frontend.
+
+4. frontend-libroclases
+- URL: https://github.com/crishuinca/fsk3-frontend-libroclases
+- Descripcion: frontend React con selector de roles, paginas de consulta/registro y empaquetado como componente NPM.

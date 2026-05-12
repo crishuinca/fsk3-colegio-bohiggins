@@ -1,0 +1,20 @@
+# Evidencias o archivos temporales pesados
+*.zip
+*.rar
+*.7z
+
+# Archivos locales del sistema/editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Bases locales de respaldo, si se copian para demo
+data/
+*.db
+
+# Salidas generadas por Maven
+target/
+
+# Exportaciones temporales
+*.tmp
+~$*

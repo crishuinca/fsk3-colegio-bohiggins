@@ -1,26 +1,32 @@
 Repositorio principal:
 - fsk3-colegio-bohiggins
 - URL: https://github.com/crishuinca/fsk3-colegio-bohiggins
-- Descripcion: repositorio documental de la entrega EV2. Contiene README general, links, arquetipo Maven y PDFs de patrones y branching.
+- Descripcion: repositorio documental de la entrega EV3. Contiene README general, links, arquetipo Maven y PDFs de patrones y branching.
 
 Repositorios de componentes:
 
 0. eureka-server
 - URL: https://github.com/crishuinca/fsk3-eureka-server
-- Descripcion: servidor Eureka para registro de ms-academico, ms-asistencia y bff-libroclases.
+- Descripcion: servidor Eureka para registro de microservicios, BFF y API Gateway.
 
 1. ms-academico
 - URL: https://github.com/crishuinca/fsk3-ms-academico
-- Descripcion: microservicio Spring Boot encargado de estudiantes, cursos, asignaturas, evaluaciones y notas. Persistencia MySQL (libroclases_academico).
+- Descripcion: microservicio Spring Boot encargado de estudiantes, cursos, asignaturas, evaluaciones y notas. Persistencia MySQL (libroclases_academico). Tests de integracion con MockMvc.
 
 2. ms-asistencia
-- URL: https://github.com/crishuinca/fsk-ms-asistencia
-- Descripcion: microservicio Spring Boot encargado de asistencias y anotaciones. Persistencia MySQL (libroclases_asistencia).
+- URL: https://github.com/crishuinca/fsk3-ms-asistencia
+- Descripcion: microservicio Spring Boot encargado de asistencias y anotaciones. Persistencia MySQL (libroclases_asistencia). Tests de integracion con MockMvc.
 
 3. bff-libroclases
 - URL: https://github.com/crishuinca/fsk3-bff
-- Descripcion: BFF con autenticacion JWT, usuarios, orquestacion via Eureka, Circuit Breaker y docker-compose MySQL compartido (docs/MYSQL.md).
+- Descripcion: BFF con autenticacion JWT, usuarios, orquestacion via Eureka, Circuit Breaker, docker-compose MySQL compartido (docs/MYSQL.md) y tests de integracion.
 
-4. frontend-libroclases
-- URL: https://github.com/crishuinca/fsk3-frontend-libroclases
-- Descripcion: frontend React con login JWT, permisos por rol, paginas de consulta/registro, crear usuario (inspector) y empaquetado como componente NPM.
+4. api-gateway
+- URL: https://github.com/crishuinca/fsk3-api-gateway
+- Descripcion: Spring Cloud Gateway. Punto de entrada unico del frontend (8080). Enruta /api/** al BFF via Eureka. CORS, logs y tests de integracion con WireMock.
+
+5. frontend-libroclases
+- URL: https://github.com/crishuinca/fsk3-frontend
+- Descripcion: frontend React con login JWT, permisos por rol, consultas/registro, crear usuario (inspector), empaquetado NPM, tests unitarios (Vitest) y E2E (Playwright).
+
+Rama de trabajo EV3 en componentes: feature/huinca
